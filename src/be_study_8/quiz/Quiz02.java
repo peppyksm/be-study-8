@@ -10,6 +10,7 @@ public class Quiz02 {
 		int productPrice = 135000;
 		String serialNumbe = "332L1545K";
 
+		
 
 		String companyName = "SAMSUNG";
 		int monitorInch = 24;
@@ -27,7 +28,6 @@ public class Quiz02 {
 		String mathScore = "85";
 		String englishScore = "90";
 		String artScore = "70";
-	
 		int result = Integer.parseInt(mathScore) + Integer.parseInt(englishScore) + Integer.parseInt(artScore);
 		System.out.println("총점 = " + result);
 
