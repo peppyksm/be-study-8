@@ -1,4 +1,4 @@
-package be_study.quiz;
+package be_study_8.quiz;
 
 import java.util.Scanner;
 

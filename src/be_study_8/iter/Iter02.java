@@ -1,4 +1,4 @@
-package be_study.iter;
+package be_study_8.iter;
 
 public class Iter02 {
 
