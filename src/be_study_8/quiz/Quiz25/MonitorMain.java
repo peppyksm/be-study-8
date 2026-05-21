@@ -11,6 +11,10 @@ public class MonitorMain {
 		m1.printInfo();
 		m2.printInfo();
 		m3.printInfo();
+		
+		Monitor m4 = new Monitor();
+		m4.setManufacturer("회사");
+		m4.printInfo();
 
 	}
 
