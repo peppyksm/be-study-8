@@ -7,5 +7,4 @@ public class Temp09 {
 	public void method() {
 		System.out.println("Temp09 method()");
 	}
-	
 }
