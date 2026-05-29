@@ -75,6 +75,8 @@ public class Inherit04Main {
 		//타입변수 기준 사용법을 알고있는 메소드만 호출 가능
 		//bm1.connect();
 		//m4.connect();
+		
+		
 	}
 
 }
