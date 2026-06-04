@@ -14,12 +14,7 @@ public class Main {
 
 		foodTruck1.addMenu(f1);
 		foodTruck1.addMenu(f2);
-		foodTruck1.addMenu(f3);
-		
-		foodTruck1.setStock(5);
-		foodTruck1.setStock(5);
-		foodTruck1.setStock(5);
-		
+		foodTruck1.addMenu(f3);	
 		
 		foodTruck1.run();
 

@@ -1,5 +1,6 @@
 package be_study_8.quiz.Quiz42;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FoodTruck {
@@ -8,7 +9,6 @@ public class FoodTruck {
 
 	Food[] menu = new Food[3];
 	int menuCount = 0;
-	int stockCount = 0;
 	int sales = 0;
 	int damage = 0;
 	int revenue = 0;
@@ -16,6 +16,7 @@ public class FoodTruck {
 
 	void run() {
 		showMenu();
+		setStock();
 		while(true) {
 			
 			int inputNum = menuSelect();
@@ -39,9 +40,25 @@ public class FoodTruck {
 		menuCount++;
 	}
 	
-	void setStock(int stock) {
-		menu[stockCount].stock = stock;
-		stockCount++;
+	
+	void setStock() {
+		int inputNum = 0;
+		System.out.println("===초기 재고 세팅(해당 메뉴를 종료하려면 0번을 입력하세요)===");
+		while(true) {
+			System.out.print("재고 세팅할 음식 번호를 입력하세요 : ");
+			inputNum = scanner.nextInt();
+			if(inputNum == 0) {
+				System.out.println("종료");
+				break;
+			}
+			
+			if(inputNum >= menu.length + 1 || inputNum < 1) {
+				System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
+			}else {
+				System.out.printf("%s의 초기 재고를 입력하세요 : ",menu[inputNum-1].name);
+				menu[inputNum-1].stock = scanner.nextInt();
+			}
+		}
 	}
 
 	void showMenu() {
